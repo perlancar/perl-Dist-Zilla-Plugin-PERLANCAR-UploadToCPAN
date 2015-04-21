@@ -140,9 +140,11 @@ __PACKAGE__->meta->make_immutable;
 1;
 # ABSTRACT: Upload the dist to CPAN
 
+=for Pod::Coverage .+
+
 =head1 SYNOPSIS
 
 =head2 DESCRIPTION
 
-Experimental plugin, created while debugging why the default UploadToCPAN
-(CPAN::Uploader) doesn't work on my PC nor my laptop.
+Just an experimental plugin. Like L<Dist::Zilla::Plugin::UploadToCPAN> but uses
+L<WWW::PAUSE::Simple> instead of L<CPAN::Uploader> as the backend.
