@@ -123,8 +123,8 @@ sub release {
   my ($self, $archive) = @_;
 
   require WWW::PAUSE::Simple;
-  print "D: username: ", $self->username, "\n";
-  print "D: password: ", $self->password, "\n";
+  #print "D: username: ", $self->username, "\n";
+  #print "D: password: ", $self->password, "\n";
 
   my $res = WWW::PAUSE::Simple::upload_file(
       username => $self->username,
